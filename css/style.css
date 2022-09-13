@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color define */
+:root {
+    --page-background-color: #DEE3EA;
+    --card-back-color: #FFFFFF;
+    --item-selected-color: #F5F5F5;
+    --btn-primary-color: #0071FF;
+}
+
+body {
+    margin-top: 15px;
+    background-color: var(--page-background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    height: 400px;
+    width: 350px;
+    background-color: var(--card-back-color);
+    border-radius: 30px;
+    padding: 40px;
+    color: black;
+}
+
+
+form.search {
+    border: none;
+    padding: 0;
+}
+
+input.search {
+    border: 0px;
+    height: 60px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 9px 4px 9px 50px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 18px center;
+    background-color: var(--item-selected-color);
+    border-radius: 25px;
+}
+
+.hr-line {
+    width: 346px;
+    position: relative;
+    left: -38px;
+    border-top: 1px solid var(--page-background-color);
+}
+
+.container>div {
+    height: 60px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    margin: 2px;
+}
+
+.container>div:hover {
+    background-color: var(--item-selected-color);
+    font-weight: 600;
+}
+
+.container>div:hover .selection-pointer {
+    background-color: var(--btn-primary-color);
+}
+
+.selection-pointer {
+    height: 18px;
+    width: 18px;
+    border-radius: 6px;
+    transform: rotate(45deg);
+    border: 1px solid lightgray;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tick-mark {
+    color: var(--card-back-color);
+    transform: rotate(-45deg);
+    height: 8px;
+    width: 8px;
+}
+
+.play-btn {
+    height: 50px;
+    width: 50px;
+    background-color: var(--btn-primary-color);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -25px;
+    cursor: pointer;
+}
+
+.play-btn img {
+    height: 15px;
+
+}
